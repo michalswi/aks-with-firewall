@@ -1,5 +1,7 @@
 # aks-with-firewall
 
+Terraform **v0.12.20**  
+Helm **v3.0.2**  
 
 ### \# **flow**
 
