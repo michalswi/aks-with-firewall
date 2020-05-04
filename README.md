@@ -3,6 +3,8 @@
 Terraform **v0.12.20**  
 Helm **v3.0.2**  
 
+AKS is hidden behind the Azure Firewall. Where firewall is the front-end-point exposed to the internet and the load balancer is internal, behind the firewall. Firewall forwards the ingress traffic (with some rules) to the internal load balancer and then LB routes the traffic to the configured ingress routes.
+
 ### \# **flow**
 
 VNet_1 [ Azure Firewall ] >> VNet peering >> VNet_2 [ AKS (ingress >> service) ]
