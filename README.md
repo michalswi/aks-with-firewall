@@ -3,6 +3,10 @@
 Terraform **v1.0.11**  
 Helm **v3.6.3**  
 
+Similar topics related to access to AKS:  
+[AKS + Azure Active Directory](https://github.com/michalswi/aks-aad)  
+[Private AKS cluster over VM](https://github.com/michalswi/aks-vm-vnet-peering)  
+
 
 ### \# **Architecture**
 
