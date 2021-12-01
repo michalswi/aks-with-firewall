@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -ex
 
-echo "$(terraform output kube_config)" > ./azurek8s
-export KUBECONFIG=./azurek8s
-
-# TODO
-echo $K8S_NAME
-echo $K8S_RG
-# kubectl get pods
+echo $K8S_NAME > /tmp/temp.log
+echo $K8S_RG > /tmp/temp.log
