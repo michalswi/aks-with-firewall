@@ -1,33 +1,26 @@
-
-variable "client_id" {}
-variable "client_secret" {}
-
-variable rg_name {
-    default = "msk8srg"
+variable "name" {
+  default = "demo"
 }
 
-variable location {
-    default = "westeurope"
+variable "location" {
+  default = "westeurope"
 }
 
 variable "dns_prefix" {
-    default = "msk8s"
-}
-
-variable cluster_name {
-    default = "msk8s"
+  default = "demodns"
 }
 
 variable "agent_count" {
-    default = 1
+  default = 1
 }
 
 variable "kubernetes_version" {
-  default = "1.15.10"
+  default = "1.19.3"
 }
 
 variable "network_plugin" {
-    default = "azure"
-    # default = "flannel"
-    # default = "cilium"
+  default = "azure"
+  # default = "kubenet"
+  # default = "flannel"
+  # default = "cilium"
 }
